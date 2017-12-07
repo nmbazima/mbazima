@@ -222,7 +222,7 @@ In most cases, I wind up using Method 3 (Login Prompts) because it balances secu
 
 {% if page.comments %}
 
-If you have your own workflow that might improve on the above, please feel free to leave a comment below.
+If you have any ideas on how to improve these methods, please feel free to leave a comment below. I'd love to hear about it.
 
 <div id="disqus_thread"></div>
 <script>
