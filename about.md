@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Currently a manager in StoneTurn's Data Analytics practice, with significant experience in forensic analytics. Past experience with large financial services firms, and have helped large enterprises to match, trace, and analyze transactions in connection with numerous fraud investigations.
+
+Masters of Information and Data Science from UC Berkeley.
+Juris Doctor from Seton Hall University School of Law.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+http://stoneturn.com/who-we-are/our-people/patrick-ryan/
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[pjryan126@gmail.com](mailto:pjryan126@gmail.com)
