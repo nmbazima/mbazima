@@ -10,9 +10,8 @@ Masters of Information and Data Science from UC Berkeley.
 Juris Doctor from Seton Hall University School of Law.
 
 ### More Information
-
-http://stoneturn.com/who-we-are/our-people/patrick-ryan/
-
+<a href="https://www.linkedin.com/in/patrick-j-ryan-83514413">LinkedIn Profile</a>
+<a href="http://stoneturn.com/who-we-are/our-people/patrick-ryan/">StoneTurn Profile</a>  
 
 ### Contact me
 
