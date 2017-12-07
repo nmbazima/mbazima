@@ -1,19 +1,19 @@
 ---
 layout: post
 comments: true
-title: Connecting to a SQL Database in Jupyter
+title: Connecting to a SQL Database with Python
 excerpt: SQL is everywhere, and if you are doing any sort of analysis in an enterprise setting, it is more likely than not that you will need to access a SQL database for at least some of your data. With the pandas library, extracting data from a SQL database in a Jupyter notebook is almost trivial, but before we can extract the data, we need to establish a connection to the database. 
 ---
 
 SQL is everywhere, and if you are doing any sort of analysis in an enterprise setting, it is more likely than not that you will need to access a SQL database for at least some of your data. With the pandas library, extracting data from a SQL database in a Jupyter notebook is almost trivial, but before we can extract the data, we need to establish a connection to the database. 
 
-Here we explore some methods for establishing a connection to a SQL database in a Jupyter notebook. For purposes of this tutorial, we will assume the database is stored on a Microsoft SQL Server, but the connection process should be about the same no matter what type of database management system you are using. We will also assume that there is an existing SQL user with all of the permissions required to access the database.
+Here we explore some methods for establishing a connection to a SQL database using Python in a Jupyter notebook. For purposes of this tutorial, we will assume the database is stored on a Microsoft SQL Server, but the connection process should be about the same no matter what type of database management system you are using. We will also assume that there is an existing SQL user with all of the permissions required to access the database.
 
 We will start with the least secure method -- hardcoding credentials into the connection code -- because it is easy to understand, but we will build toward our ultimate goal, a connection that is both secure and easy to use.
 
 # Getting Started
 
-Before we do anything, we will need to install some third-party Python packages to help us establish and use our connections. The sqlalchemy engine works well with pandas dataframes, so we will use those libraries to perform our SQL queries below. If you are curious, sqlalchemy's 'create_engine' function can leverage the pyodbc library to connect to a SQL Server, so we import that library, as well.
+Before we do anything, we will need to install some third-party Python packages to help us establish and use our connections. The sqlalchemy engine works well with *pandas* data frame, so we will use those libraries to perform our SQL queries below. If you are curious, sqlalchemy's 'create_engine' function can leverage the pyodbc library to connect to a SQL Server, so we import that library, as well.
 
 If you do not already have these packages installed, you can install them using pip. The pyodbc library can be tricky to install, so a bit of light googling might also be required.
 
@@ -52,7 +52,7 @@ from sqlalchemy import create_engine
 db = create_engine('mssql+pyodbc:///?odbc_connect=%s' % params)
 ```
 
-The database engine then allows us to query the database and return the results as a *pandas* dataframe using the pandas 'read_sql_query' method.
+The database engine then allows us to query the database and return the results as a *pandas* data frame using the pandas 'read_sql_query' method.
 
 ```
 import pandas as pd
@@ -70,14 +70,14 @@ pd.read_sql_query(sql, db)
 
 Hard-coding a connection string can be the simplest and fastest way to establish a database connection, and in an enterprise setting, speed can be highly valued. But the hardcoding method presents some extremely serious issues. 
 
-First, placing login credentials directly into the code presents a serious security issue. Anyone with access to the code can discover the credentials quite easily, and if the code is maintained on publicly accessible version control site like Github, you could be giving your data away to anyone who wants it. 
+First, placing login credentials directly into the code presents a serious security issue. Anyone with access to the code can discover the credentials quite easily, and if the code is maintained on publicly accessible version control site like GitHub, you could be giving your data away to anyone who wants it. 
 
-Second, if the login credentials change, you will need to find and update every instance of the connection string in your files or Jupyter notebooks. If the connection is a one-time need, this is no big deal, but if you rely on the same connection string for connections in numerous notebooks, an update to the credentials might cause some serious tension headaches.  
+Second, if the login credentials change, you will need to find and update every instance of the connection string in your Python files or Jupyter notebooks. If the connection is a one-time need, this is no big deal, but if you rely on the same connection string for connections in numerous notebooks, an update to the credentials might cause some serious tension headaches.  
 
-To mitigate the side effects of hardcoding a connection string, we can try storing our credentials in a separate file and importing the credentials when we need to establish a connection. For example, we could create a file called **creds.py** in the same directory as our Jupyter notebook and then place the credential values in a Python dictionary.
+To mitigate the side effects of hard-coding a connection string, we can try storing our credentials in a separate file and importing the credentials when we need to establish a connection. For example, we could create a file called **creds.py** in the same directory as our Jupyter notebook and then place the credential values in a Python dictionary.
 
 ```
-%writefile ./creds.py
+%%writefile ./creds.py
 
 creds = dict(driver='{ODBC Driver 13 for SQL Server}',
              server='localhost',
@@ -90,7 +90,8 @@ creds = dict(driver='{ODBC Driver 13 for SQL Server}',
 We can then import the creds dictionary whenever we need to establish a database connection. In fact, to minimize code reuse, we can also create our database engine object in its own **database.py** module and import it into our notebooks whenever we need it.
 
 ```
-%writefile ./database.py
+%%writefile ./database.py
+
 import urllib
 
 import pyodbc
@@ -113,24 +114,26 @@ Furthermore, if the credentials ever change -- perhaps the login credentials mus
 
 # Method 3: Login Prompts
 
-The decoupling method is a vast improvement over hardcoding our credentials, but it's still far from ideal. The problem is that it reduces our security risk only if we remember to hide the creds.py file from other users, and even then, the file remains in plaintext on our own machine.
+The decoupling method is a vast improvement over hard-coding our credentials, but it's still far from ideal. The problem is that it reduces our security risk only if we remember to hide the **creds.py** file from other users, and even then, the file remains in plaintext on our own machine.
 
 The obvious answer is to force users to enter credentials whenever they want to connect to the database. Of course, following this approach to the letter would maximize security but minimize ease of use. To balance these concerns, we can take a hybrid approach that uses a params.py file to store database parameters but prompts the user for authentication credentials.
 
-The params.py file is similar to the creds.py file above, only the 'user' and 'passwd' parameter have been omitted. 
+The **params.py** file is similar to the **creds.py** file above, only the 'user' and 'passwd' parameter have been omitted. 
 
 ```
 %%writefile ./params.py
+
 params = dict(driver='{ODBC Driver 13 for SQL Server}',
               server='localhost',
               port=1433,
               database='nb-database')
 ```
 
-We also update the database.py file by replacing the db object with a 'connect' function, which takes a username and password as parameters.
+We also update the **database.py** file by replacing the db object with a 'connect' function, which takes a username and password as parameters.
 
 ```
 %%writefile ./database.py
+
 import urllib
 
 import pyodbc
@@ -139,15 +142,15 @@ from sqlalchemy import create_engine
 from params import params
 
 def connect(username, password):
-    str_params = 'DRIVER=' + params['driver'] + ';' \
-             'SERVER=' + params['server'] + ';' \
-             'DATABASE=' + params['database'] + ';' \
-             'UID=' + username + ';' \
-             'PWD=' + password + ';' \
-             'PORT=' + str(params['port']) + ';'
+    p = 'DRIVER=' + params['driver'] + ';' \
+        'SERVER=' + params['server'] + ';' \
+        'DATABASE=' + params['database'] + ';' \
+        'UID=' + username + ';' \
+        'PWD=' + password + ';' \
+        'PORT=' + str(params['port']) + ';'
             
-    str_params = urllib.parse.quote_plus(str_params)
-    db = create_engine('mssql+pyodbc:///?odbc_connect=%s' % str_params)
+    p = urllib.parse.quote_plus(str_params)
+    db = create_engine('mssql+pyodbc:///?odbc_connect=%s' % p)
     return db
 ```
 
@@ -164,7 +167,7 @@ password = getpass.getpass('password:')
 db = connect(username, password)
 ```
 
-The 'connect' function returns a sqlalchemy engine object, which we can again use to query the SQL database.
+The 'connect' function returns a sqlalchemy engine object, which we can again use in our Jupyter notebook to query the SQL database.
 
 ```
 import pandas as pd
@@ -187,7 +190,8 @@ The login prompt method is great when sharing notebooks with users who have data
 Enter environment variables. Assuming that we have a Jupyter server that our audience can access, we can serve our notebooks on the Jupyter server and save the necessary login credentials in the server's environment. In such case, our *database.py* file might look something like this.
 
 ```
-%writefile ./database.py
+%%writefile ./database.py
+
 import os
 import urllib
 
@@ -214,7 +218,7 @@ Like the login prompts method, using environment variables maintains password se
 
 # Conclusion
 
-The correct method of connecting to a database in Jupyter will usually depend on the situation. If the notebook is a personal notebook, and the database is not so sensitive that you worry about intrusion, a hardcoded connection string might suffice. But if the database is sensitive, or if you are sharing the notebook with other users, I strongly recommend using one of the other options. 
+The correct method of connecting to a database in Python will usually depend on the situation. If the notebook is a personal notebook, and the database is not so sensitive that you worry about intrusion, a hard-coded connection string might suffice. But if the database is sensitive, or if you are sharing the notebook with other users, I strongly recommend using one of the other options. 
 
 In most cases, I wind up using Method 3 (Login Prompts) because it balances security with ease of use and does not require that I remember to exclude my credentials file from version control. Of course, in cases where I need to provide trusted business users with access to my analysis, I might lean toward Method 4 (Environment Variables). 
 
