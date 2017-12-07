@@ -1,12 +1,13 @@
 ---
 layout: post
-comments: false
+comments: true
 title: Connecting to a Database in Jupyter
+excerpt: SQL is everywhere, and if you are doing any sort of analysis in an enterprise setting, it is more likely than not that you will need to access a SQL database for at least some of your data. With the pandas library, extracting data from a SQL database in a Jupyter notebook is almost trivial, but before we can extract the data, we need to establish a connection to the database. 
 ---
 
 # Introduction
 
-SQL is everywhere, and if you are doing any sort of analysis in an enterprise setting, it is more likely than not that you will need to access a SQL database for at least some of your data. With the pandas module, extracting data from a SQL database in a Jupyter notebook is almost trivial, but before we can extract the data, we will need to establish a connection to the database. 
+SQL is everywhere, and if you are doing any sort of analysis in an enterprise setting, it is more likely than not that you will need to access a SQL database for at least some of your data. With the pandas library, extracting data from a SQL database in a Jupyter notebook is almost trivial, but before we can extract the data, we need to establish a connection to the database. 
 
 Here we explore some methods for establishing a connection to a SQL database in a Jupyter notebook. For purposes of this tutorial, we will assume the database is stored on a Microsoft SQL Server, but the connection process should be about the same no matter what type of database management system you are using. We will also assume that there is an existing SQL user with all of the permissions required to access the database.
 
