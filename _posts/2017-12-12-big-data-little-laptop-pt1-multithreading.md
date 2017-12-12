@@ -95,7 +95,8 @@ def worker_func(i, q):
             # add filepath to data frame
             df['fpath'] = fpath
             
-            # append first 5 rows of data frame to multiprocessing list
+            # append first 5 rows of data frame to 
+            # multiprocessing list
             mlist.append(df)
         
         except Exception as e:

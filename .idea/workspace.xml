@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81d165b-8be1-4774-87fe-911f14847239" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-12-big-data-little-laptop-pt1-multithreading.md" afterPath="$PROJECT_DIR$/_posts/2017-12-12-big-data-little-laptop-pt1-multithreading.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-12-12-big-data-little-laptop-pt1-multithreading.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-52">
-                <caret line="85" column="2" lean-forward="false" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
+              <first_editor relative-caret-position="208">
+                <caret line="98" column="14" lean-forward="false" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -217,8 +218,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-12-12-big-data-little-laptop-pt1-multithreading.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-52">
-            <caret line="85" column="2" lean-forward="false" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
+          <first_editor relative-caret-position="208">
+            <caret line="98" column="14" lean-forward="false" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
             <folding />
           </first_editor>
           <second_editor />
