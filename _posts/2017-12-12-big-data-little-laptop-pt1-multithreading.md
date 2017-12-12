@@ -20,13 +20,13 @@ In other cases, it may not even be your choice. Perhaps you are working as an ou
 
 Whatever the constraints, the use of traditional computing systems to store, process, and analyze data is often unavoidable, and when the size of that data is so great that your laptop slows to a crawl, or when you need to develop and test your code locally before deploying it in a distributed environment, you might need a little help. 
 
-In this series of posts, I would like to explore some tools and methods for Python that can help you work with larger data sets directly on your laptop. I won't hit on every such tool available in the Python ecosystem, but I touch on some of the more common tools that I have encountered over my years of Python coding. 
+In this series of posts, we are going to explore some tools and methods for Python that can help you work with larger data sets directly on your laptop. We won't hit on every tool in the Python ecosystem, but we will touch on some of the more common tools that you will encounter when working with big data. 
 
 We will start with some simple yet powerful coding patterns that help to maximize available CPU and RAM -- multithreading and multiprocessing.
 
 # Getting Started
 
-Your Python distribution will have all of the packages required for writing multithreaded and multiprocess programs, but you can make your life a little easier on the multiprocessing side by installing `pathos`, a fork of the standard Python `multiprocessing` library that allows to pass just about anything to your processes without encountering a pickling error. For purposes of this article, all code snippets have been written with Python 3 in mind.
+Your Python distribution will have all of the packages required for writing multithreaded and multiprocess programs, but you can make your life a little easier on the multiprocessing side by installing `pathos`, a fork of the standard Python `multiprocessing` library that allows you to pass just about anything to your processes without encountering a pickling error. For purposes of this article, all code snippets have been written with Python 3 in mind.
 
 ```
 $ pip install pathos
@@ -40,13 +40,13 @@ But Python was developed to keep things simple. To remove the possibility of con
 
 For this reason, creating multiple threads to handle execution of Python statements generally provides no benefit.  Python programs with complex processing statements are typically "CPU-bound", meaning the time that it takes to run the program is primarily dependent on how long it takes to serially process all of the program's Python statements.
 
-We can still greatly improve the performance of certain Python programs, however, using a multithreaded approach. Such programs are generally "IO-bound", that is, the time that it takes to complete the program is primarily dependent on how long it takes to perform network or filesystem tasks, such as calling a web-based API or working with a large number of files on an external drive.  
+We can still greatly improve the performance of certain Python programs, however, using a multithreaded approach. Such programs are generally "IO-bound", that is, the time that it takes to complete the program is primarily dependent on how long it takes to perform network or filesystem tasks, such as calling a web-based API or opening files on a network drive.  
 
 # Multithreaded Programming
 
 In many cases, the coding pattern for a multithreaded Python program is fairly straightforward. Items for processing are placed into a processing queue, and a number of threads are opened to process the items. Each item of the queue is fed to the thread, and as soon as a thread has finished processing an item, it plucks another item from the queue. 
 
-An example of a coding pattern that I often use for multithreaded Python programs is below. In this example, I am reading the first five rows of data from each of hundreds of identically formatted Microsoft Excel Files and combining the data into a single `pandas` data frame. 
+An example of a coding pattern that I often use for multithreaded Python programs is below. In this example, we are taking the first five rows of data from each of hundreds of identically formatted Microsoft Excel Files and combining them into a single `pandas` data frame. 
 
 ```
 from multiprocessing import Manager
