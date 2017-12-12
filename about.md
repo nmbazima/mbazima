@@ -4,10 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Currently a manager in StoneTurn's Data Analytics practice, with significant experience in forensic analytics. Past experience with large financial services firms, and have helped large enterprises to match, trace, and analyze transactions in connection with numerous fraud investigations.
+Data Scientist | Analytics Manager for a Global Consulting Firm | Python | R | SQL | d3.js | Whatever Else It Takes to do the Job
 
-Masters of Information and Data Science from UC Berkeley.
-Juris Doctor from Seton Hall University School of Law.
+* Masters of Information and Data Science from UC Berkeley.
+* Juris Doctor from Seton Hall University School of Law.
+
 
 ### More Information
 <a href="https://www.linkedin.com/in/patrick-j-ryan-83514413">LinkedIn Profile</a>  
