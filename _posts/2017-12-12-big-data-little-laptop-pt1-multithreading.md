@@ -63,7 +63,8 @@ num_threads = 20
 # initialize the queue
 queue = Queue()
 
-# initialize a multiprocessing list object to hold results of each thread
+# initialize a multiprocessing list object 
+# to hold results of each thread
 manager = Manager()
 mlist = manager.list()
 
@@ -75,12 +76,14 @@ files = []
 for root, dirnames, filenames in os.walk(pwd):
     # iterate over MS Excel files
     for f in filenames:
-        # check if file is a MS Excel file
         fpath = os.path.join(root, f)
-        if os.path.isfile(fpath) and os.path.splitext(f)[-1] in ('.xls', '.xlsx'):
-            queue.put(fpath)
+        # check if file is a MS Excel file
+        if os.path.isfile(fpath):
+            if os.path.splitext(f)[-1] in ('.xls', '.xlsx'):
+                queue.put(fpath)
 
-# define worker function -- this is the function that will process each item in the queue
+# define worker function
+# this is the function that will process each item in the queue
 def worker_func(i, q):
     while True:
         try:
