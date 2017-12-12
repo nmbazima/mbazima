@@ -132,3 +132,30 @@ Finally, when all of the items have been processed, we concatenate the outputs s
 This is a fairly simple example of multithreading in Python, but it can be extremely powerful. When I'm dealing with processing thousands of files, I almost always try using this method first before considering a distributed solution like Hadoop.
 
 In the next article, I will continue the discussion with an overview and example of multiprocessing in Python. The multiprocessing method can be invaluable when dealing complex computations or data transformations, and it's often no more complicated than the multithreaded example above. 
+
+{% if page.comments %}
+
+If you have any ideas on how to improve these methods, please feel free to leave a comment below. I'd love to hear about it.
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-pjryan126-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+{% endif %}
