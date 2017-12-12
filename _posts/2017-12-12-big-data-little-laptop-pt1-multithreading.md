@@ -119,7 +119,7 @@ df = pd.concat(mlist)
 
 First, we define some variables for the program, including the number of threads to open. You should experiment with the number of threads to see what works best. It will vary from program to program.
 
-Second, we build the queue of items to be processed. The queue above is a simple list of file paths, but the items can be more complex, *e.g.*, a list of `pandas` series objects. 
+Second, we build the queue of items to be processed. The queue above is a simple list of file paths, but the items can be more complex. For example, they could be a list of `pandas` series objects. 
 
 Third, we define a worker function, which is the function that each thread will apply to items in the queue. If your code is complex, you can define additional helper functions and then call each helper function from inside the primary worker function. Keep in mind, however, that we are solving IO-bound problems with this code pattern, so if your code is too complex, you might wind up turning your IO-bound problem into a CPU-bound problem.
 
