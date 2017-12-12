@@ -1,3 +1,11 @@
+---
+layout: post
+comments: true
+title: Big Data, Little Laptop (Part 1)
+excerpt: Distributed computing is a powerful thing, but the use of traditional computing systems to store, process, and analyze data is often unavoidable. When the size of your data is so great that your laptop slows to a crawl, or when you need to develop and test your code locally before deploying it in a distributed environment, these simple tools and methods might be exactly what you need.
+image: ../images/big-data-little-laptop.jpg
+---
+
 # Introduction
 
 Distributed computing is a powerful thing. With systems like Hadoop, Apache Spark, and Elasticsearch, data and computing professionals are conquering problems that were previously insurmountable in more traditional computing systems. What's more, their continuing growth and development in cloud computing environments has made distributed systems accessible and affordable to global enterprises and aspiring data scientists and developers alike.  
