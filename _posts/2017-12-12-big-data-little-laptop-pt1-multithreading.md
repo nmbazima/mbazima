@@ -123,7 +123,7 @@ Second, we build the queue of items to be processed. The queue above is a simple
 
 Third, we define a worker function, which is the function that each thread will apply to items in the queue. If your code is complex, you can define additional helper functions and then call each helper function from inside the primary worker function. Keep in mind, however, that we are solving IO-bound problems with this code pattern, so if your code is too complex, you might wind up turning your IO-bound problem into a CPU-bound problem.
 
-Fourth, we open the threads and start feeding items from the queue. Each thread opens the filepath item, reads the first five rows into a `pandas` data frame, performs a light transformation, and then adds the data frame to a special list type that makes itself available to all of the open threads. 
+Fourth, we open the threads and start feeding items from the queue. Each thread opens the file path item, reads the first five rows into a `pandas` data frame, performs a light transformation, and then adds the data frame to a special list type that makes itself available to all of the open threads. 
 
 Finally, when all of the items have been processed, we concatenate the outputs stored in the multiprocessing list into a single data frame for review. 
 
@@ -131,4 +131,4 @@ Finally, when all of the items have been processed, we concatenate the outputs s
 
 This is a fairly simple example of multithreading in Python, but it can be extremely powerful. When I'm dealing with processing thousands of files, I almost always try using this method first before considering a distributed solution like Hadoop.
 
-In the next article, I will continue the discussion with an overview and example of multiprocessing in Python. The method can be invaluable when dealing complex computations or data transformations, and it's often no more complicated than the multithreaded example above. 
+In the next article, I will continue the discussion with an overview and example of multiprocessing in Python. The multiprocessing method can be invaluable when dealing complex computations or data transformations, and it's often no more complicated than the multithreaded example above. 
