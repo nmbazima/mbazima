@@ -10,7 +10,7 @@ category: techblog
 tags: [python, multiprocessing, big data, parallel computing]
 ---
 
-By the time the kids woke me up this morning, there were four inches of snow on the ground. My typical commute into the office can take anywhere from ninety minutes to two and a half hours, so the need to shovel snow before catching a bus was frustrating, to say the least. 
+By the time the kids woke me up this morning, there were four inches of snow on the ground. My typical commute into work can take anywhere from ninety minutes to two and a half hours, so the need to shovel snow before catching a bus was frustrating, to say the least. 
 
 Inside my shed are four shovels. Unfortunately, I can only use one shovel at a time, and it takes about an hour for that one shovel to push all the snow out of my driveway and into the street. I really don't have an hour to spare this morning, though, so I need to find some way to speed up this process. Luckily, I've got a couple of underworked miniature facsimiles of myself watching cartoons in the living room, and with a few minor threats (and counting all the way to two and a half), they were outside pushing snow into the street with me, while my wife stayed inside and worked on some of our other everyday tasks. 
 
