@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Data Scientist  
+## Data Scientist  
 Analytics Manager @ <a href="www.stoneturn.com">StoneTurn</a>  
 (Python, R, SQL, Javascript, Other stuff)
 
@@ -12,9 +12,9 @@ Analytics Manager @ <a href="www.stoneturn.com">StoneTurn</a>
 * Juris Doctor from Seton Hall University School of Law.
 
 
-### More Information
+## More Information
 <a href="https://www.linkedin.com/in/patrick-j-ryan-83514413">LinkedIn Profile</a>  
 
-### Contact me
+## Contact me
 
 [pjryan126@gmail.com](mailto:pjryan126@gmail.com)
