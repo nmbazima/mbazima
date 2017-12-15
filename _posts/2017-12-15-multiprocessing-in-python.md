@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Multiprocessing in Python
 excerpt: Parallel computing is a power tool, and Python makes it easy. If you are dealing with a long-running program, Python's multiprocessing package might what you need. 
-image: images/python-logo.png
+image: images/python-logo.jpg
 date: 2017-12-12
 author: pjryan126
 category: techblog
