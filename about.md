@@ -3,8 +3,7 @@ layout: page
 title: 
 permalink: /about/
 ---
-
-## Data Scientist  
+  
 Analytics Manager @ <a href="www.stoneturn.com">StoneTurn</a>  
 (Python, R, SQL, Javascript, Other stuff)
 
