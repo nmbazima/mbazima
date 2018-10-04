@@ -48,5 +48,6 @@ useful tool (as long as you're not worried about providing your code to an
 outside party for processing), and it can get you at least most of the way 
 to clean, readable SQL statements. 
 
-I'll be pushing out the guidelines over the next few weeks. For now, please
-take a look at some general style rules that I employ **[here](https://pjryan126.github.io/sql-style-general-rules/)**. 
+I'll be pushing out my guidelines over the next few weeks. For now, please take
+a look at some general style rules that I try my best to employ when coding in 
+SQL **[here](https://pjryan126.github.io/sql-style-general-rules/)**. 
