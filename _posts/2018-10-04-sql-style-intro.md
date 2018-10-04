@@ -7,6 +7,7 @@ image: images/sql-style-guidelines.jpg
 date: 2018-10-04
 author: pjryan126
 category: techblog
+tags: [sql, coding, style]
 ---
 
 ## Introduction

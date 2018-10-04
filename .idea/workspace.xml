@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a81d165b-8be1-4774-87fe-911f14847239" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/_posts/2018-10-04-sql-style-general-rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-10-04-sql-style-general-rules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-10-04-sql-style-intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-10-04-sql-style-intro.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2655" />
+          <entry key="md" value="2698" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2655" />
+          <entry key="Markdown" value="2698" />
         </counts>
       </usages-collector>
     </session>
@@ -78,8 +79,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-10-04-sql-style-intro.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="120" selection-start-line="4" selection-start-column="120" selection-end-line="4" selection-end-column="120" />
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-end-line="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -90,8 +91,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-10-04-sql-style-general-rules.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="267">
-                <caret line="94" column="64" selection-start-line="94" selection-start-column="64" selection-end-line="94" selection-end-column="64" />
+              <first_editor relative-caret-position="72">
+                <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -294,8 +295,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-04-sql-style-intro.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="120" selection-start-line="4" selection-start-column="120" selection-end-line="4" selection-end-column="120" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>
@@ -304,8 +305,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-04-sql-style-general-rules.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="267">
-            <caret line="94" column="64" selection-start-line="94" selection-start-column="64" selection-end-line="94" selection-end-column="64" />
+          <first_editor relative-caret-position="72">
+            <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>

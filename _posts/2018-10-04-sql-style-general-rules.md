@@ -7,6 +7,7 @@ image: images/sql-style-guidelines-general-rules.jpg
 date: 2018-10-04
 author: pjryan126
 category: techblog
+tags: [sql, coding, style]
 ---
 
 Below are some general rules that I try to follow when coding in a SQL 
