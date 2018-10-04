@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: SQL Style for Data Science
-excerpt: Opinions on SQL style are freely available, but they often vary, and quite frankly, I sometimes find it hard to keep them straight. For that reason, I have begun to compile a basic set of style guidelines that I hope to commit to memory and use when I'm coding in SQL. 
+excerpt: Opinions on SQL style are freely available, but they often vary, and I sometimes find it hard to keep them all straight. For that reason, I have begun to compile a basic set of style guidelines that I hope to commit to memory and use when I'm coding in SQL. 
 image: images/sql-style-guidelines.jpg
 date: 2018-10-04
 author: pjryan126
