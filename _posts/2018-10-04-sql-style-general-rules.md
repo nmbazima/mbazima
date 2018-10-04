@@ -92,7 +92,7 @@ SELECT
 ```
 
 You can find a useful summary of standard and dialect-specific functions 
-[here](https://en.wikibooks.org/wiki/SQL_Dialects_Reference). Many of the 
+**[here](https://en.wikibooks.org/wiki/SQL_Dialects_Reference)**. Many of the 
 system-specific functions can be quite useful, so I wouldn't say their use 
 should be expressly forbidden. If you are writing code that you think might be 
 used on more than one type of database management system, though, you should do 
