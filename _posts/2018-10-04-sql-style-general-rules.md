@@ -1,3 +1,10 @@
+---
+layout: post
+comments: true
+title: SQL Style for Data Science - General Rules
+excerpt: Below are some general rules that I try to follow when coding in a SQL environment. There will always be exceptions, but you might want to keep these in mind when you're developing your own SQL scripts.
+---
+
 # General Rules
 
 Below are some general rules that I try to follow when coding in a SQL 

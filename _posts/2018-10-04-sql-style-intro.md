@@ -1,3 +1,10 @@
+---
+layout: post
+comments: true
+title: SQL Style for Data Science - General Rules
+excerpt: Opinions on SQL style are freely available, but they often vary, and quite frankly, I sometimes find it hard to keep them straight. For that reason, I have begun to compile a basic set of style guidelines that I hope to commit to memory and use when I'm coding in SQL. 
+---
+
 # SQL Style for Data Scientists
 
 ## Introduction
@@ -39,4 +46,4 @@ outside party for processing), and it can get you at least most of the way
 to clean, readable SQL statements. 
 
 I'll be pushing out the guidelines over the next few weeks. For now, please
-take a look at some general style rules that I employ **[here](https://google.com)**. 
+take a look at some general style rules that I employ **[here](https://pjryan126.github.io/sql-style-general-rules/)**. 
