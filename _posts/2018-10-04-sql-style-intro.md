@@ -10,8 +10,6 @@ category: techblog
 tags: [sql, coding, style]
 ---
 
-## Introduction
-
 I spend enough time in SQL environments to worry not only about how my code 
 functions but also about how it looks. When it comes to personal projects, 
 formatting and style often give way to my concerns over performance and my
