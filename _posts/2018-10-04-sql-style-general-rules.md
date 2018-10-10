@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: SQL Style for Data Scientists - Part One
+title: SQL Style for Data Scientists - 3 Simple Rules
 subtitle: 3 Simple Rules for Writing Better SQL Code
 excerpt: Below are some general rules that I try to follow when coding in a SQL environment. There will always be exceptions, but you might want to keep these in mind when you're developing your own SQL scripts.
 image: images/sql-style-guidelines-general-rules.png
@@ -10,8 +10,6 @@ author: pjryan126
 category: techblog
 tags: [sql, coding, style]
 ---
-
-## 3 Simple Rules for Writing Better SQL Code
 
 Following on last week's brief **[introduction](https://pjryan126.github.io/sql-style-intro/)**, here are some general rules 
 that I try to follow when coding in a SQL 

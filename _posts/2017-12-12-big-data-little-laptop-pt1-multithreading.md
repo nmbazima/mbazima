@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Big Data, Little Laptop (Part 1)
+title: Big Data, Little Laptop
 excerpt: Distributed computing is a powerful thing, but the use of traditional computing systems to store, process, and analyze data is often unavoidable. When the size of your data is so great that your laptop slows to a crawl, or when you need to develop and test your code locally before deploying it in a distributed environment, a few simple Python tools and methods might be all you need...
 image: images/big-data-little-laptop.jpg
 date: 2017-12-12
