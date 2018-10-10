@@ -1,7 +1,8 @@
 ---
 layout: post
 comments: true
-title: 3 Simple Rules for Writing Better SQL Code
+title: SQL Style for Data Scientists - Part One
+subtitle: 3 Simple Rules for Writing Better SQL Code
 excerpt: Below are some general rules that I try to follow when coding in a SQL environment. There will always be exceptions, but you might want to keep these in mind when you're developing your own SQL scripts.
 image: images/sql-style-guidelines-general-rules.png
 date: 2018-10-04
@@ -10,10 +11,14 @@ category: techblog
 tags: [sql, coding, style]
 ---
 
-## SQL For Data Scientists
+## 3 Simple Rules for Writing Better SQL Code
 
-Below are some general rules that I try to follow when coding in a SQL 
-environment. The rules are derived from Joe Celko's **[SQL Programming Style](https://www.amazon.com/Celkos-Programming-Kaufmann-Management-Systems/dp/0120887975/ref=sr\_1\_1?ie=UTF8&qid=1516645111&sr=8-1&keywords=Joe+Celko+SQL+Programming+Style)** 
+Following on last week's brief **[introduction](https://pjryan126.github.io/sql-style-intro/)**, here are some general rules 
+that I try to follow when coding in a SQL 
+environment.
+
+These rules are derived from Joe Celko's **[SQL Programming 
+Style](https://www.amazon.com/Celkos-Programming-Kaufmann-Management-Systems/dp/0120887975/ref=sr\_1\_1?ie=UTF8&qid=1516645111&sr=8-1&keywords=Joe+Celko+SQL+Programming+Style)** 
 and also appear in Simon Holywell's 
 **[SQL Style Guide](http://www.sqlstyle.guide/)**. There will always be 
 exceptions, but you might want to keep these rules in mind when you're 
