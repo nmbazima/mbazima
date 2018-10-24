@@ -11,8 +11,8 @@ category: techblog
 tags: [sql, coding, style]
 ---
 
-Following on last week's brief **[introduction](https://pjryan126.github.io/sql-style-intro/)**, here are some general rules 
-that I try to follow when coding in a SQL 
+Following on last week's brief **[introduction](https://pjryan126.github.io/sql-style-intro/)**, 
+here are some general rules that I try to follow when coding in a SQL 
 environment. These rules are derived from Joe Celko's **[SQL Programming 
 Style](https://www.amazon.com/Celkos-Programming-Kaufmann-Management-Systems/dp/0120887975/ref=sr\_1\_1?ie=UTF8&qid=1516645111&sr=8-1&keywords=Joe+Celko+SQL+Programming+Style)** 
 and also appear in Simon Holywell's 
