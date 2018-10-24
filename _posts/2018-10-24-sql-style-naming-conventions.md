@@ -12,7 +12,7 @@ category: techblog
 tags: [sql, coding, style]
 ---
 
-This is part three of a four-part series on SQL coding style. 
+This is Part Three of a four-part series on SQL coding style. 
 
 Part One was a brief **[introduction](https://pjryan126.github
 .io/sql-style-intro/)** to what I'm trying to accomplish with these 
