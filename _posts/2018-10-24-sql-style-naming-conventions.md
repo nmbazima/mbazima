@@ -19,7 +19,7 @@ Part One was a brief **[introduction](https://pjryan126.github
 articles. 
 
 Part Two provided some **[general rules](https://pryan126.github
-.io/sql-style-general-rules) that I try to follow when coding in a SQL 
+.io/sql-style-general-rules)** that I try to follow when coding in a SQL 
 environment. 
 
 In Part Three below, I will discuss naming conventions that I try to 
